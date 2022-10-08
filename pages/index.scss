@@ -1,121 +1,100 @@
-@media screen and (min-width: 375px) and (max-width: 768px) {
-    /* index Mobile */
-    body {
-        margin: 0 auto;
-        font-family: "DM Sans", sans-serif !important;
-        background-image: #e7e7e7;
-      }
-      .logorental {
-        padding-top: 10px;
-        width: 30%;
-      }
-      .imagenportada {
-        margin: 0 auto;
-        width: 100vw;
-      }
-      .main_maspedidos {
-        width: 100vw;
-        height: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-        &_title h2 {
-          margin: 0 auto;
-          padding-top: 20px;
-          font-size: 20px;
-          align-items: center;
-          justify-content: center;
-          text-align: center;
-        }
-        &_box {
-          width: 90%;
-          justify-self: center;
-        }
-        &_cam {
-          width: 100%;
-        }
-      }
-      .masproductos {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 40px;
-        font-size: 18px;
-      }
-      .arribos_oferta {
-        width: 100vw;
-        height: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-bottom: 3px;
-        gap: 10px;
-      }
-      .oferta_del_mes {
-        width: 80%;
-      }
-      .nuevos_arribos {
-        width: 80%;
-      }
-      .promo_estudiantes {
-        width: 90%;
-        padding-bottom: 5px;
-      }
-      h3 span {
-        background-color: #d6d6d6;
-      }
-      .footer {
-        width: 100vw;
-        background-color: grey;
-        &_img {
-          width: 100%;
-        }
-      }
+body {
+  margin: 0 auto;
+}
+.imagenportada {
+  margin: 0 auto;
+  width: 100%;
+}
+.main_maspedidos {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 15px 0px;
+  &_title h2 {
+    margin: 0 auto;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  &_box {
+    width: 80%;
+    padding: 5px;
+    justify-self: center;
     
+  }
+  &_cam {
+    width: 100%;
+  }
+  
 }
+  /* index Mobile */
+@media screen and (min-width: 375px) and (max-width: 768px) {
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {  
-   /* index Tablet */
-   body {
-    margin: 0 auto;
-    font-family: "DM Sans", sans-serif !important;
-    background-image: #e7e7e7;
-  }  
-  .logorental {
-    padding-top: 10px;
-    width: 25%;
-  }
-  .main_header {
-&_logo a {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
+.main_maspedidos {
+  &_title h2 {
+  font-size: 16px;
+  padding-bottom: 15px;
 }
-&_nav {
-padding-top: 10px;
-width: 100vw;
-height: 40px;
-display: flex;
-justify-content: center;
-align-items: center;
-text-decoration: none;
 }
+  .masproductos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
   }
-  .imagenportada {
-    margin: 0 auto;
-    width: 100vw;
-  }
-  .main_maspedidos {
+  .arribos_oferta {
     width: 100vw;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: center;
+    padding-bottom: 3px;
+    gap: 10px;
+  }
+  .oferta_del_mes {
+    width: 80%;
+  }
+  .nuevos_arribos {
+    width: 80%;
+  }
+  .promo_estudiantes {
+    width: 90%;
+    padding-bottom: 5px;
+  }
+  h3 span {
+    background-color: #d6d6d6;
+  }
+}
+  /* index Tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+  .main_header {
+    &_logo a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &_nav {
+      padding-top: 10px;
+      width: 100%;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+    }
+  }
+
+  .main_maspedidos {
     gap: 15px;
     &_title {
       display: flex;
@@ -132,9 +111,6 @@ text-decoration: none;
     &_box {
       width: 75%;
       justify-self: center;
-    }
-    &_cam {
-      width: 100%;
     }
   }
 
@@ -166,124 +142,109 @@ text-decoration: none;
     width: 80%;
     padding-bottom: 5px;
   }
-  h3 span {
-    background-color: #d6d6d6;
+}
+  /* index Desktop */
+@media (min-width: 1024px) {
+  .main_header {
+    z-index: 3;
+    width: 100%;
+    position: fixed;
   }
-  .footer {
-    width: 100vw;
-    background-color: grey;
-  }
-  .footer_img {
+  .main_img {
     width: 100%;
   }
-    
-    
-}
-
-@media (min-width: 1024px) {
-    body {
-        margin: 0 auto;
-        font-family: "DM Sans", sans-serif !important;
-        background-image: #e7e7e7;
-      }
-    .logorental {
-      width: 40%;
-    }
-    .main_header {
-      z-index: 3;
+  .main_maspedidos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: space-evenly;
+    &_title {
+      display: grid;
+      justify-content: center;
+      padding-top: 30px;
       width: 100%;
-      position: fixed;
+      height: 100px;
     }
-      .imagenportada {
-        width: 100vw;
+    &_box {
+      width: 90%;
+      justify-self: center;
+      :hover {
+        transform: scale(1.1);
+        border-radius: 5px;
       }
-      .main_img {
-        width: 100vw;
+    }
+    &_cam {
+      transition: all 0.5s;
+    }
+  }
+  .masproductos {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .arribos_oferta {
+    width: 100%;
+    height: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "nuevos_arribos oferta_del_mes"
+      "promo_estudiantes promo_estudiantes";
+    padding-top: 50px;
+    justify-items: center;
+    gap: 20px 10px;
+  }
+  .nuevos_arribos {
+    grid-area: nuevos_arribos;
+    width: 98%;
+    animation-name: Movimiento;
+    animation-iteration-count: unset;
+    animation-timing-function: cubic-bezier();
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    @keyframes Movimiento {
+      0% {
+        transform: translate(-700px);
       }
-      .main_maspedidos {
-        width: 100vw;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 15px 0px;
-        align-content: space-evenly;
-        &_title {
-          display: grid;
-          justify-content: center;
-          padding-top: 10px;
-          width: 100vw;
-          height: 100px;
+      100% {
+        transform: translate(0px);
       }
-      &_box {
-        width: 90%;
-        justify-self: center;
-        :hover {
-          transform: scale(1.1);
-          border-radius: 30px;
-        }
+    }
+  }
+
+  .oferta_del_mes {
+    grid-area: oferta_del_mes;
+    width: 98%;
+    animation-name: Movimiento2;
+    animation-iteration-count: unset;
+    animation-timing-function: cubic-bezier();
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    @keyframes Movimiento2 {
+      0% {
+        transform: translate(700px);
       }
-      &_cam {
-        width: 100%;
-        transition: all 0.5s;
+      100% {
+        transform: translate(0px);
       }
-      
+    }
+  }
+  .promo_estudiantes {
+    grid-area: promo_estudiantes;
+    width: 99%;
+    animation-name: Movimiento3;
+    animation-iteration-count: unset;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    @keyframes Movimiento3 {
+      0% {
+        transform: scale(0%);
       }
-      .masproductos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      100% {
+        transform: scale(100%);
       }
-      .seccion3 {
-        width: 100%;
-      }
-      .arribos_oferta {
-        width: 100%;
-        height: 800px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas:
-          "nuevos_arribos oferta_del_mes"
-          "promo_estudiantes promo_estudiantes";
-        padding-top: 50px;
-        justify-items: center;
-        gap: 20px 10px;
-      }
-      .nuevos_arribos {
-        grid-area: nuevos_arribos;
-        width: 98%;
-        animation-name: Movimiento;
-        animation-iteration-count: unset;
-        animation-timing-function: cubic-bezier();
-        animation-duration: 1.5s;
-        animation-delay: 0s;
-      }
-    
-      .oferta_del_mes {
-        grid-area: oferta_del_mes;
-        width: 98%;
-        animation-name: Movimiento2;
-        animation-iteration-count: unset;
-        animation-timing-function: cubic-bezier();
-        animation-duration: 1.5s;
-        animation-delay: 0s;
-      }
-      .promo_estudiantes {
-        grid-area: promo_estudiantes;
-        width: 99%;
-        animation-name: Movimiento3;
-        animation-iteration-count: unset;
-        animation-duration: 1.5s;
-        animation-delay: 0s;
-      }
-    
-      h3 span {
-        background-color: #d6d6d6;
-      }
-      .footer {
-        width: 100vw;
-        background-color: grey;
-        &_img {
-          width: 100%;
-        }   
-}
+    }
+  }
 }
