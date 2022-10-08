@@ -1,3 +1,6 @@
+/* Font */
+/* Colores */
+/* Breakpoints */
 /* Bucle Paddings */
 .padding-1 {
   padding: 1rem; }
@@ -8412,7 +8415,6 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
-/* Breakpoints */
 /* Mixin Font Size */
 /* Mixin box-shadow */
 /* Mobile & Tablet */
@@ -8474,6 +8476,7 @@ textarea.form-control-lg {
     height: 200px;
     padding-top: 80px; } }
 
+/* Mobile */
 .main_contacto {
   display: flex;
   flex-direction: column;
@@ -8519,7 +8522,7 @@ textarea.form-control-lg {
     width: 100%;
     height: 20px; }
 
-/* Contacto Tablet */
+/* Media Query Tablet */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .contacto_forms {
     height: 160px; }
@@ -8531,7 +8534,7 @@ textarea.form-control-lg {
     .contacto_forms_texto {
       height: 200px; } }
 
-/* Contacto Desktop */
+/* Media Query Desktop */
 @media (min-width: 1024px) {
   .contacto_mapa {
     margin: 0 auto;
@@ -8716,6 +8719,7 @@ textarea.form-control-lg {
     font-size: 24px;
     text-decoration: underline; } }
 
+/* Mobile */
 body, .imagenportada, .main_maspedidos_cam {
   margin: 0 auto;
   width: 100%;
@@ -8767,7 +8771,7 @@ body, .imagenportada, .main_maspedidos_cam {
 .promo_estudiantes {
   width: 90%; }
 
-/* index Tablet */
+/* Media Query Tablet */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .main_header_logo a {
     display: flex;
@@ -8821,7 +8825,7 @@ body, .imagenportada, .main_maspedidos_cam {
     width: 80%;
     padding-bottom: 5px; } }
 
-/* index Desktop */
+/* Media Query Desktop */
 @media (min-width: 1024px) {
   .main_header {
     z-index: 3;

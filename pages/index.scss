@@ -1,3 +1,5 @@
+/* Mobile */
+
 body {
   margin: 0 auto;
   width: 100%;
@@ -57,7 +59,8 @@ body {
 .promo_estudiantes {
   width: 90%;
 }
-/* index Tablet */
+
+/* Media Query Tablet */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .main_header {
     &_logo a {
@@ -126,7 +129,7 @@ body {
     padding-bottom: 5px;
   }
 }
-/* index Desktop */
+/* Media Query Desktop */
 @media (min-width: 1024px) {
   .main_header {
     z-index: 3;

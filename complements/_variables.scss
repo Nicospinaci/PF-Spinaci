@@ -1,8 +1,8 @@
-// Font
+/* Font */
 
 $font-family: "DM Sans", sans-serif;
 
-// color
+/* Colores */
 
 $primary: #e4e6e7;
 $dark: #232323;
@@ -17,3 +17,10 @@ $green: #198754;
 $teal: #20c997;
 $cyan: #0dcaf0;
 
+/* Breakpoints */
+
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+);

@@ -1,3 +1,4 @@
+/* Mobile */
 .main_contacto {
   display: flex;
   flex-direction: column;
@@ -50,7 +51,7 @@
   }
 }
 
-/* Contacto Tablet */
+/* Media Query Tablet */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .contacto_forms {
     height: 160px;
@@ -67,7 +68,7 @@
   }
 }
 
-/* Contacto Desktop */
+/* Media Query Desktop */
 @media (min-width: 1024px) {
   .contacto_mapa {
     margin: 0 auto;
