@@ -8658,6 +8658,7 @@ textarea.form-control-lg {
     gap: 9px;
     flex-direction: column; }
   .sumate_forms_inputs_box {
+    width: 200px;
     height: 20px; }
   .sumate_forms_sexo {
     display: flex;
@@ -8708,6 +8709,9 @@ textarea.form-control-lg {
     padding-top: 0px; }
   .sumate_forms {
     height: 260px; }
+    .sumate_forms_inputs_box {
+      width: 300px;
+      height: 20px; }
   .sumate_textarea {
     width: 660px;
     height: 120px; }
