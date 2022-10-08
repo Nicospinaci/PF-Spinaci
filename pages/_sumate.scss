@@ -1,3 +1,5 @@
+/* Mobile */
+
 .sumate_trabaja {
   display: flex;
   flex-direction: column;
@@ -84,7 +86,7 @@
   height: 120px;
 }
 
-/* Sumate Tablet */
+/* Media Query Tablet */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .sumate_trabaja {
     h1 {
@@ -98,7 +100,7 @@
   }
 }
 
-/* Sumate Desktop */
+/* Media Query Desktop */
 @media (min-width: 1024px) {
   .sumate {
     &_trabaja {

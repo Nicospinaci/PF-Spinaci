@@ -1,3 +1,4 @@
+/* Bucle Paddings */
 .padding-1 {
   padding: 1rem; }
 
@@ -111,7 +112,7 @@
   :root {
     scroll-behavior: smooth; } }
 
-body {
+body, .imagenportada, .main_maspedidos_cam {
   margin: 0;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
@@ -8411,6 +8412,10 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
+/* Breakpoints */
+/* Mixin Font Size */
+/* Mixin box-shadow */
+/* Mobile & Tablet */
 .alquileres_condiciones {
   text-decoration: underline;
   margin: 0 auto;
@@ -8452,7 +8457,7 @@ textarea.form-control-lg {
     .alquileres_ol {
       font-size: 20px; } }
 
-/* Alquileres Desktop */
+/* Media Query Desktop */
 @media (min-width: 1024px) {
   .alquileres_ol {
     display: flex;
@@ -8606,6 +8611,7 @@ textarea.form-control-lg {
       .nosotros_main_text {
         font-size: 20px; } }
 
+/* Mobile */
 .sumate_trabaja {
   display: flex;
   flex-direction: column;
@@ -8681,7 +8687,7 @@ textarea.form-control-lg {
   width: 80%;
   height: 120px; }
 
-/* Sumate Tablet */
+/* Media Query Tablet */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .sumate_trabaja h1, .sumate_trabaja .h1 {
     font-size: 20px;
@@ -8690,7 +8696,7 @@ textarea.form-control-lg {
     width: 60%;
     height: 120px; } }
 
-/* Sumate Desktop */
+/* Media Query Desktop */
 @media (min-width: 1024px) {
   .sumate_trabaja {
     padding-top: 80px;
@@ -8710,12 +8716,10 @@ textarea.form-control-lg {
     font-size: 24px;
     text-decoration: underline; } }
 
-body {
-  margin: 0 auto; }
-
-.imagenportada {
+body, .imagenportada, .main_maspedidos_cam {
   margin: 0 auto;
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
 
 .main_maspedidos {
   width: 100%;
@@ -8727,47 +8731,41 @@ body {
   gap: 15px 0px; }
   .main_maspedidos_title h2, .main_maspedidos_title .h2 {
     margin: 0 auto;
+    font-size: 20px;
+    padding-bottom: 15px;
     padding-top: 20px;
     align-items: center;
     justify-content: center;
     text-align: center; }
   .main_maspedidos_box {
     width: 80%;
-    padding: 5px;
-    justify-self: center; }
-  .main_maspedidos_cam {
-    width: 100%; }
+    justify-self: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.21); }
 
-/* index Mobile */
-@media screen and (min-width: 375px) and (max-width: 768px) {
-  .main_maspedidos_title h2, .main_maspedidos_title .h2 {
-    font-size: 16px;
-    padding-bottom: 15px; }
-  .masproductos {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 40px;
-    font-size: 18px; }
-  .arribos_oferta {
-    width: 100vw;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-bottom: 3px;
-    gap: 10px; }
-  .oferta_del_mes {
-    width: 80%; }
-  .nuevos_arribos {
-    width: 80%; }
-  .promo_estudiantes {
-    width: 90%;
-    padding-bottom: 5px; }
-  h3 span, .h3 span {
-    background-color: #d6d6d6; } }
+.masproductos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  font-size: 18px; }
+
+.arribos_oferta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 3px;
+  gap: 10px; }
+
+.oferta_del_mes {
+  width: 80%; }
+
+.nuevos_arribos {
+  width: 80%; }
+
+.promo_estudiantes {
+  width: 90%; }
 
 /* index Tablet */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -8841,10 +8839,13 @@ body {
       padding-top: 30px;
       width: 100%;
       height: 100px; }
+      .main_maspedidos_title h2, .main_maspedidos_title .h2 {
+        font-size: 30px; }
     .main_maspedidos_box {
       width: 90%;
       justify-self: center; }
       .main_maspedidos_box :hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
         transform: scale(1.1);
         border-radius: 5px; }
     .main_maspedidos_cam {
@@ -8853,7 +8854,8 @@ body {
     padding-top: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    font-size: 24px; }
   .arribos_oferta {
     width: 100%;
     height: 800px;
@@ -8865,6 +8867,7 @@ body {
     justify-items: center;
     gap: 20px 10px; }
   .nuevos_arribos {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     grid-area: nuevos_arribos;
     width: 98%;
     animation-name: Movimiento;
@@ -8878,6 +8881,7 @@ body {
     100% {
       transform: translate(0px); } }
   .oferta_del_mes {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     grid-area: oferta_del_mes;
     width: 98%;
     animation-name: Movimiento2;
@@ -8891,6 +8895,7 @@ body {
     100% {
       transform: translate(0px); } }
   .promo_estudiantes {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     grid-area: promo_estudiantes;
     width: 99%;
     animation-name: Movimiento3;

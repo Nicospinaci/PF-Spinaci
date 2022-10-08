@@ -1,9 +1,10 @@
 body {
   margin: 0 auto;
+  width: 100%;
+  height: 100%;
 }
 .imagenportada {
-  margin: 0 auto;
-  width: 100%;
+  @extend body;
 }
 .main_maspedidos {
   width: 100%;
@@ -15,6 +16,8 @@ body {
   gap: 15px 0px;
   &_title h2 {
     margin: 0 auto;
+    font-size: 20px;
+    padding-bottom: 15px;
     padding-top: 20px;
     align-items: center;
     justify-content: center;
@@ -22,60 +25,40 @@ body {
   }
   &_box {
     width: 80%;
-    padding: 5px;
     justify-self: center;
-    
+    @include box-shadow(1);
   }
   &_cam {
-    width: 100%;
-  }
-  
-}
-  /* index Mobile */
-@media screen and (min-width: 375px) and (max-width: 768px) {
-
-.main_maspedidos {
-  &_title h2 {
-  font-size: 16px;
-  padding-bottom: 15px;
-}
-}
-  .masproductos {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 40px;
-    font-size: 18px;
-  }
-  .arribos_oferta {
-    width: 100vw;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-bottom: 3px;
-    gap: 10px;
-  }
-  .oferta_del_mes {
-    width: 80%;
-  }
-  .nuevos_arribos {
-    width: 80%;
-  }
-  .promo_estudiantes {
-    width: 90%;
-    padding-bottom: 5px;
-  }
-  h3 span {
-    background-color: #d6d6d6;
+    @extend body;
   }
 }
-  /* index Tablet */
+.masproductos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+}
+.arribos_oferta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 3px;
+  gap: 10px;
+}
+.oferta_del_mes {
+  width: 80%;
+}
+.nuevos_arribos {
+  width: 80%;
+}
+.promo_estudiantes {
+  width: 90%;
+}
+/* index Tablet */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-
-
   .main_header {
     &_logo a {
       display: flex;
@@ -143,7 +126,7 @@ body {
     padding-bottom: 5px;
   }
 }
-  /* index Desktop */
+/* index Desktop */
 @media (min-width: 1024px) {
   .main_header {
     z-index: 3;
@@ -163,12 +146,15 @@ body {
       padding-top: 30px;
       width: 100%;
       height: 100px;
+      h2 {
+        font-size: 30px;
+      }
     }
     &_box {
       width: 90%;
       justify-self: center;
       :hover {
-        transform: scale(1.1);
+        @include box-shadow(2) transform: scale(1.1);
         border-radius: 5px;
       }
     }
@@ -181,6 +167,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 24px;
   }
 
   .arribos_oferta {
@@ -197,7 +184,7 @@ body {
     gap: 20px 10px;
   }
   .nuevos_arribos {
-    grid-area: nuevos_arribos;
+    @include box-shadow(2) grid-area: nuevos_arribos;
     width: 98%;
     animation-name: Movimiento;
     animation-iteration-count: unset;
@@ -215,7 +202,7 @@ body {
   }
 
   .oferta_del_mes {
-    grid-area: oferta_del_mes;
+    @include box-shadow(2) grid-area: oferta_del_mes;
     width: 98%;
     animation-name: Movimiento2;
     animation-iteration-count: unset;
@@ -232,7 +219,7 @@ body {
     }
   }
   .promo_estudiantes {
-    grid-area: promo_estudiantes;
+    @include box-shadow(2) grid-area: promo_estudiantes;
     width: 99%;
     animation-name: Movimiento3;
     animation-iteration-count: unset;
