@@ -8651,6 +8651,10 @@ textarea.form-control-lg {
       .nosotros_title h1, .nosotros_title .h1 {
         font-size: 28px; } }
 
+.nosotros_main_text_img {
+  display: flex;
+  justify-content: center; }
+
 /* Mobile */
 .sumate_trabaja {
   display: flex;
