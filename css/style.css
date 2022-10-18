@@ -8478,6 +8478,7 @@ textarea.form-control-lg {
 
 /* Mobile */
 .titulo {
+  text-decoration: underline;
   display: flex;
   justify-content: center; }
   .titulo h1, .titulo .h1 {
@@ -8531,6 +8532,7 @@ textarea.form-control-lg {
 /* Media Query Tablet */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .titulo {
+    text-decoration: underline;
     display: flex;
     justify-content: center; }
     .titulo h1, .titulo .h1 {
@@ -8558,11 +8560,12 @@ textarea.form-control-lg {
     .contacto_mapa img {
       width: 70%; }
   .titulo {
+    text-decoration: underline;
     padding-top: 20px;
     display: flex;
     justify-content: center; }
     .titulo h1, .titulo .h1 {
-      font-size: 30px; }
+      font-size: 24px; }
   .contacto_forms {
     height: 250px;
     display: flex;
@@ -8630,6 +8633,23 @@ textarea.form-control-lg {
     @media screen and (min-width: 1024px) {
       .nosotros_main_text {
         font-size: 20px; } }
+
+.nosotros_title {
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px; }
+  .nosotros_title h1, .nosotros_title .h1 {
+    font-size: 18px; }
+    @media screen and (min-width: 576px) {
+      .nosotros_title h1, .nosotros_title .h1 {
+        font-size: 18px; } }
+    @media screen and (min-width: 768px) {
+      .nosotros_title h1, .nosotros_title .h1 {
+        font-size: 22px; } }
+    @media screen and (min-width: 1024px) {
+      .nosotros_title h1, .nosotros_title .h1 {
+        font-size: 28px; } }
 
 /* Mobile */
 .sumate_trabaja {
@@ -8883,12 +8903,13 @@ body, .imagenportada, .main_maspedidos_cam {
     font-size: 24px; }
   .arribos_oferta {
     width: 100%;
-    height: 800px;
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas: "nuevos_arribos oferta_del_mes" "promo_estudiantes promo_estudiantes";
     padding-top: 50px;
+    padding-bottom: 20px;
     justify-items: center;
     gap: 20px 10px; }
   .nuevos_arribos {

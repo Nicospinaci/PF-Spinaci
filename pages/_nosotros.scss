@@ -5,6 +5,8 @@
   align-self: center;
   width: 100%;
   height: 100%;
+  &_text_img {
+  }
   &_text {
     margin: 0 auto;
     height: 100%;
@@ -18,6 +20,26 @@
     @include fsize(lg) {
       font-size: 20px;
     }
+
   }
+}
+.nosotros_title {
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+
+  h1 {
+    font-size: 18px;
+  @include fsize(sm) {
+    font-size: 18px;
+  }
+  @include fsize(md) {
+    font-size: 22px;
+  }
+  @include fsize(lg) {
+    font-size: 28px;
+  }
+}
 }
 

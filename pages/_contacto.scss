@@ -1,5 +1,6 @@
 /* Mobile */
 .titulo {
+  text-decoration: underline;
   display: flex;
   justify-content: center;
   h1 {
@@ -61,6 +62,7 @@
 /* Media Query Tablet */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .titulo {
+    text-decoration: underline;
     display: flex;
     justify-content: center;
     h1 {
@@ -97,11 +99,12 @@
     }
   }
   .titulo {
+    text-decoration: underline;
     padding-top: 20px;
     display: flex;
     justify-content: center;
     h1 {
-      font-size: 30px;
+      font-size: 24px;
     }
   }
   .contacto_forms {

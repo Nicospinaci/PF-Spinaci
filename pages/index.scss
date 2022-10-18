@@ -175,14 +175,15 @@ body {
 
   .arribos_oferta {
     width: 100%;
-    height: 800px;
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas:
       "nuevos_arribos oferta_del_mes"
       "promo_estudiantes promo_estudiantes";
     padding-top: 50px;
+    padding-bottom: 20px;
     justify-items: center;
     gap: 20px 10px;
   }
