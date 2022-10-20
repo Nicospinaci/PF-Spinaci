@@ -12,7 +12,6 @@
     text-decoration: underline;
   }
   &_p {
-    padding-bottom: 20px;
     padding-top: 15px;
     margin: 0 auto;
     align-items: center;
@@ -30,24 +29,15 @@
 }
 .sumate_forms {
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: 240px;
-  gap: 30px;
-  &_labels {
-    display: flex;
-    flex-direction: column;
-    font-size: 16px;
-    gap: 5px;
-  }
+
   &_inputs {
     display: flex;
-    gap: 9px;
+    gap: 12.5px;
     flex-direction: column;
   }
   &_inputs_box {
-    width: 200px;
+    margin: 0 auto;
+    width: 250px;
     height: 20px;
   }
   &_sexo {
@@ -86,6 +76,21 @@
   width: 80%;
   height: 120px;
 }
+.sumate_labels_and_inputs {
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom:1rem;
+}
+.sumate_forms_img {
+  width: 100%;
+}
+.sumate_forms_img_container {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  padding: 1rem;
+}
 
 /* Media Query Tablet */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -112,10 +117,13 @@
       padding-top: 0px;
     }
     &_forms {
-      height: 260px;
+
+      align-items: center;
+      height: 100%;
       &_inputs_box {
         width: 300px;
         height: 20px;
+        margin: 0 auto;
       }
     }
     
@@ -133,5 +141,18 @@
       font-size: 24px;
       text-decoration: underline;
     }
+  }
+  .sumate_forms_img {
+    width: 100%;
+  }
+  .sumate_forms_img_container {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    padding: 3rem;
+  }
+  .sumate_labels_and_inputs {
+    display: flex;
+    gap: 2rem;
   }
 }

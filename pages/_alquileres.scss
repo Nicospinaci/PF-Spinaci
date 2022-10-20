@@ -7,6 +7,11 @@
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.button {
+  margin: 0 auto;
+  width: 40%;
+  padding: 1rem;
+}
 
 .alquileres {
   &_condiciones {
@@ -22,7 +27,7 @@
       padding-top: 15px;
       font-size: 18px;
       @include fsize(sm) {
-        font-size: 20px;
+        font-size: 18px;
       }
       @include fsize(md) {
         font-size: 22px;
@@ -51,6 +56,7 @@
       font-size: 20px;
     }
   }
+
 }
 
 /* Media Query Desktop */
@@ -77,5 +83,14 @@
   }
   .cards {
     padding-top: 5rem;
+  }
+  .card-title h5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .button {
+    margin: 0 auto;
+    width: 20%;
   }
 }

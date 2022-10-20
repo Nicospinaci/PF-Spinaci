@@ -8426,6 +8426,11 @@ textarea.form-control-lg {
   padding-left: 1rem;
   padding-right: 1rem; }
 
+.button {
+  margin: 0 auto;
+  width: 40%;
+  padding: 1rem; }
+
 .alquileres_condiciones {
   text-decoration: underline;
   margin: 0 auto;
@@ -8440,7 +8445,7 @@ textarea.form-control-lg {
     font-size: 18px; }
     @media screen and (min-width: 576px) {
       .alquileres_condiciones h1, .alquileres_condiciones .h1 {
-        font-size: 20px; } }
+        font-size: 18px; } }
     @media screen and (min-width: 768px) {
       .alquileres_condiciones h1, .alquileres_condiciones .h1 {
         font-size: 22px; } }
@@ -8485,7 +8490,14 @@ textarea.form-control-lg {
   .card {
     margin: 0 auto; }
   .cards {
-    padding-top: 5rem; } }
+    padding-top: 5rem; }
+  .card-title h5, .card-title .h5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .button {
+    margin: 0 auto;
+    width: 20%; } }
 
 /* Mobile */
 .titulo {
@@ -8703,7 +8715,6 @@ textarea.form-control-lg {
     font-size: 18px;
     text-decoration: underline; }
   .sumate_trabaja_p {
-    padding-bottom: 20px;
     padding-top: 15px;
     margin: 0 auto;
     align-items: center;
@@ -8719,23 +8730,14 @@ textarea.form-control-lg {
         font-size: 20px; } }
 
 .sumate_forms {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: 240px;
-  gap: 30px; }
-  .sumate_forms_labels {
-    display: flex;
-    flex-direction: column;
-    font-size: 16px;
-    gap: 5px; }
+  width: 100%; }
   .sumate_forms_inputs {
     display: flex;
-    gap: 9px;
+    gap: 12.5px;
     flex-direction: column; }
   .sumate_forms_inputs_box {
-    width: 200px;
+    margin: 0 auto;
+    width: 250px;
     height: 20px; }
   .sumate_forms_sexo {
     display: flex;
@@ -8768,6 +8770,21 @@ textarea.form-control-lg {
   width: 80%;
   height: 120px; }
 
+.sumate_labels_and_inputs {
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem; }
+
+.sumate_forms_img {
+  width: 100%; }
+
+.sumate_forms_img_container {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  padding: 1rem; }
+
 /* Media Query Tablet */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .sumate_trabaja h1, .sumate_trabaja .h1 {
@@ -8785,10 +8802,12 @@ textarea.form-control-lg {
   .sumate_trabaja_p {
     padding-top: 0px; }
   .sumate_forms {
-    height: 260px; }
+    align-items: center;
+    height: 100%; }
     .sumate_forms_inputs_box {
       width: 300px;
-      height: 20px; }
+      height: 20px;
+      margin: 0 auto; }
   .sumate_textarea {
     width: 660px;
     height: 120px; }
@@ -8798,7 +8817,17 @@ textarea.form-control-lg {
     width: 2%; }
   .sumate h1, .sumate .h1 {
     font-size: 24px;
-    text-decoration: underline; } }
+    text-decoration: underline; }
+  .sumate_forms_img {
+    width: 100%; }
+  .sumate_forms_img_container {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    padding: 3rem; }
+  .sumate_labels_and_inputs {
+    display: flex;
+    gap: 2rem; } }
 
 /* Mobile */
 body, .imagenportada, .main_maspedidos_cam {
