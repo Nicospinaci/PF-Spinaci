@@ -8418,6 +8418,14 @@ textarea.form-control-lg {
 /* Mixin Font Size */
 /* Mixin box-shadow */
 /* Mobile & Tablet */
+.card {
+  margin: 0 auto; }
+
+.cards {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
 .alquileres_condiciones {
   text-decoration: underline;
   margin: 0 auto;
@@ -8473,8 +8481,11 @@ textarea.form-control-lg {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 200px;
-    padding-top: 80px; } }
+    height: 100px; }
+  .card {
+    margin: 0 auto; }
+  .cards {
+    padding-top: 5rem; } }
 
 /* Mobile */
 .titulo {
@@ -8621,7 +8632,6 @@ textarea.form-control-lg {
   width: 100%;
   height: 100%; }
   .nosotros_main_text {
-    margin: 0 auto;
     height: 100%;
     line-height: 2; }
     @media screen and (min-width: 576px) {
@@ -8632,6 +8642,19 @@ textarea.form-control-lg {
         font-size: 18px; } }
     @media screen and (min-width: 1024px) {
       .nosotros_main_text {
+        font-size: 20px; } }
+  .nosotros_main_lasttext {
+    height: 100%;
+    line-height: 2;
+    padding: 2rem; }
+    @media screen and (min-width: 576px) {
+      .nosotros_main_lasttext p {
+        font-size: 16px; } }
+    @media screen and (min-width: 768px) {
+      .nosotros_main_lasttext p {
+        font-size: 18px; } }
+    @media screen and (min-width: 1024px) {
+      .nosotros_main_lasttext p {
         font-size: 20px; } }
 
 .nosotros_title {
@@ -8651,9 +8674,22 @@ textarea.form-control-lg {
       .nosotros_title h1, .nosotros_title .h1 {
         font-size: 28px; } }
 
-.nosotros_main_text_img {
-  display: flex;
-  justify-content: center; }
+@media (min-width: 1024px) {
+  .nosotros_main_text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem 2rem; }
+    .nosotros_main_text_imgfs {
+      display: flex;
+      justify-content: center; }
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5rem; }
+  .nosotros_title {
+    padding-bottom: 5rem; } }
 
 /* Mobile */
 .sumate_trabaja {
