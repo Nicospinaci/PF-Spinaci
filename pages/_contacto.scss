@@ -15,23 +15,22 @@
 }
 .contacto_forms {
   width: 100%;
-  height: 110px;
+  height: 150px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1f 1fr;
   gap: 2px;
   &_img {
-    width: 80%;
-    padding: 40px;
+    width: 100%;
+    padding: 30px;
   }
   &_inputs {
+    display: grid;
+    grid-row: auto;
+    gap: 10px;
+    height: 30px;
     width: 80%;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
     font-size: 12px;
-    padding-top: 20px;
-    padding-right: 30px;
   }
   &_texto_contenedor {
     display: flex;
@@ -54,8 +53,7 @@
     height: 50px;
   }
   .input_scale_contacto {
-    width: 100%;
-    height: 20px;
+    height: 30px;
   }
 }
 
@@ -121,10 +119,12 @@
     }
     &_inputs {
       width: 30%;
-      .input_scale_contacto {
-        width: 100%;
-        height: 25px;
-      }
+      
+    }
+    .input_scale_contacto {
+      width: 100%;
+      height: 30px;
+      font-size: 16px;
     }
     &_texto {
       display: flex;
@@ -140,7 +140,7 @@
       padding-bottom: 30px;
     }
     &_img {
-      width: 80%;
+      width: 100%;
       animation-name: Loop;
       animation-iteration-count: infinite;
       animation-timing-function: cubic-bezier(90%);

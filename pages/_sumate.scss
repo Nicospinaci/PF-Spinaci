@@ -38,7 +38,7 @@
   &_inputs_box {
     margin: 0 auto;
     width: 250px;
-    height: 20px;
+    height: 30px;
   }
   &_sexo {
     display: flex;
@@ -121,7 +121,7 @@
       height: 100%;
       &_inputs_box {
         width: 300px;
-        height: 20px;
+        height: 30px;
         margin: 0 auto;
       }
     }
@@ -154,4 +154,5 @@
     display: flex;
     gap: 2rem;
   }
+
 }
