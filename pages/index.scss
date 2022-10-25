@@ -178,6 +178,10 @@ body {
       display: grid;
       grid-template-columns: 1fr 1fr;
       padding: 1rem;
+      &:hover {
+        @include box-shadow(2); transform: scale(1.1);
+        border-radius: 5px;
+      }
     }
     &_cam {
       transition: all 0.5s;
@@ -207,7 +211,7 @@ body {
     gap: 20px 10px;
   }
   .nuevos_arribos {
-    @include box-shadow(2) grid-area: nuevos_arribos;
+    @include box-shadow(2); grid-area : nuevos_arribos;
     width: 98%;
     animation-name: Movimiento;
     animation-iteration-count: unset;
@@ -225,7 +229,7 @@ body {
   }
 
   .oferta_del_mes {
-    @include box-shadow(2) grid-area: oferta_del_mes;
+    @include box-shadow(2); grid-area: oferta_del_mes;
     width: 98%;
     animation-name: Movimiento2;
     animation-iteration-count: unset;
@@ -242,8 +246,8 @@ body {
     }
   }
   .promo_estudiantes {
-    @include box-shadow(2) grid-area: promo_estudiantes;
-    width: 99%;
+    @include box-shadow(2); grid-area: promo_estudiantes;
+    width: 92%;
     animation-name: Movimiento3;
     animation-iteration-count: unset;
     animation-duration: 1.5s;
@@ -256,5 +260,14 @@ body {
         transform: scale(100%);
       }
     }
+  }
+  .card-img-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ h3 {
+  font-size: 50px;
+ }
   }
 }

@@ -8978,6 +8978,10 @@ body, .imagenportada {
       display: grid;
       grid-template-columns: 1fr 1fr;
       padding: 1rem; }
+      .main_maspedidos_box:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        transform: scale(1.1);
+        border-radius: 5px; }
     .main_maspedidos_cam {
       transition: all 0.5s;
       width: 80%; }
@@ -9029,7 +9033,7 @@ body, .imagenportada {
   .promo_estudiantes {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     grid-area: promo_estudiantes;
-    width: 99%;
+    width: 92%;
     animation-name: Movimiento3;
     animation-iteration-count: unset;
     animation-duration: 1.5s;
@@ -9038,4 +9042,11 @@ body, .imagenportada {
     0% {
       transform: scale(0%); }
     100% {
-      transform: scale(100%); } } }
+      transform: scale(100%); } }
+  .card-img-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .card-img-overlay h3, .card-img-overlay .h3 {
+      font-size: 50px; } }
