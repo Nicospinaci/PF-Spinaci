@@ -8519,6 +8519,7 @@ textarea.form-control-lg {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1f 1fr;
+  border-radius: 10px;
   gap: 2px; }
   .contacto_forms_img {
     width: 100%;
@@ -8736,7 +8737,7 @@ textarea.form-control-lg {
     flex-direction: column; }
   .sumate_forms_inputs_box {
     margin: 0 auto;
-    width: 250px;
+    width: 300px;
     height: 30px; }
   .sumate_forms_sexo {
     display: flex;

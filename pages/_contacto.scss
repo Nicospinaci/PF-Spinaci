@@ -19,6 +19,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1f 1fr;
+  border-radius: 10px;
   gap: 2px;
   &_img {
     width: 100%;
