@@ -8881,20 +8881,69 @@ body, .imagenportada {
   font-size: 18px; }
 
 .arribos_oferta {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-bottom: 3px;
-  gap: 10px; }
+  padding: 1rem;
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: center; }
 
 .oferta_del_mes {
-  width: 80%; }
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  background: #403231;
+  background: linear-gradient(0deg, #403231 16%, #7e4b4d 54%); }
 
 .nuevos_arribos {
-  width: 80%; }
+  display: grid;
+  grid-template-rows: 1fr 0,5fr;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-items: center;
+  background: #403231;
+  background: linear-gradient(0deg, #403231 16%, #7e4b4d 54%); }
+
+.card-title {
+  font-size: 30px; }
+  @media screen and (min-width: 576px) {
+    .card-title {
+      font-size: 34px; } }
+  @media screen and (min-width: 768px) {
+    .card-title {
+      font-size: 38px; } }
+  @media screen and (min-width: 1024px) {
+    .card-title {
+      font-size: 50px; } }
+
+.card-title-promo {
+  font-size: 16px; }
+  @media screen and (min-width: 576px) {
+    .card-title-promo {
+      font-size: 20px; } }
+  @media screen and (min-width: 768px) {
+    .card-title-promo {
+      font-size: 24px; } }
+  @media screen and (min-width: 1024px) {
+    .card-title-promo {
+      font-size: 50px; } }
+
+.ver_mas {
+  font-size: 16px; }
+  @media screen and (min-width: 576px) {
+    .ver_mas {
+      font-size: 16px; } }
+  @media screen and (min-width: 768px) {
+    .ver_mas {
+      font-size: 20px; } }
+  @media screen and (min-width: 1024px) {
+    .ver_mas {
+      font-size: 34px; } }
 
 .promo_estudiantes {
-  width: 90%; }
+  width: 100%; }
 
 /* Media Query Tablet */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -8935,21 +8984,7 @@ body, .imagenportada {
     width: 100%;
     font-size: 16px;
     padding-top: 20px;
-    padding-bottom: 20px; }
-  .arribos_oferta {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 3px;
-    gap: 10px; }
-  .oferta_del_mes {
-    width: 70%; }
-  .nuevos_arribos {
-    width: 70%; }
-  .promo_estudiantes {
-    width: 80%;
-    padding-bottom: 5px; } }
+    padding-bottom: 20px; } }
 
 /* Media Query Desktop */
 @media (min-width: 1024px) {
@@ -8990,10 +9025,8 @@ body, .imagenportada {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 24px; }
+    font-size: 32px; }
   .arribos_oferta {
-    width: 100%;
-    height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -9002,10 +9035,21 @@ body, .imagenportada {
     padding-bottom: 20px;
     justify-items: center;
     gap: 20px 10px; }
+  .card-img {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center; }
   .nuevos_arribos {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     grid-area: nuevos_arribos;
-    width: 98%;
+    display: grid;
+    grid-template-rows: 1fr 0,5fr;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+    background: #403231;
+    background: linear-gradient(0deg, #403231 16%, #7e4b4d 54%);
     animation-name: Movimiento;
     animation-iteration-count: unset;
     animation-timing-function: cubic-bezier();
@@ -9019,7 +9063,13 @@ body, .imagenportada {
   .oferta_del_mes {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     grid-area: oferta_del_mes;
-    width: 98%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+    background: #403231;
+    background: linear-gradient(0deg, #403231 16%, #7e4b4d 54%);
     animation-name: Movimiento2;
     animation-iteration-count: unset;
     animation-timing-function: cubic-bezier();
@@ -9033,7 +9083,6 @@ body, .imagenportada {
   .promo_estudiantes {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     grid-area: promo_estudiantes;
-    width: 92%;
     animation-name: Movimiento3;
     animation-iteration-count: unset;
     animation-duration: 1.5s;
