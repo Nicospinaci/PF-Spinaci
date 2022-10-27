@@ -8528,8 +8528,8 @@ textarea.form-control-lg {
     grid-row: auto;
     gap: 10px;
     height: 30px;
-    width: 80%;
-    font-size: 12px; }
+    width: 85%;
+    font-size: 16px; }
   .contacto_forms_texto_contenedor {
     display: flex;
     flex-direction: column;
