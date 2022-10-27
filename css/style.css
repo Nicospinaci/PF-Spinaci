@@ -8533,7 +8533,7 @@ textarea.form-control-lg {
   .contacto_forms_inputs {
     display: grid;
     grid-row: auto;
-    gap: 10px;
+    gap: 16px;
     width: 85%;
     font-size: 16px; }
   .contacto_forms_texto_contenedor {
@@ -8768,7 +8768,7 @@ textarea.form-control-lg {
   width: 100%; }
   .sumate_forms_inputs {
     display: flex;
-    gap: 12.5px;
+    gap: 16px;
     flex-direction: column; }
   .sumate_forms_inputs_box {
     margin: 0 auto;
