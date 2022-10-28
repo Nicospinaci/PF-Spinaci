@@ -8883,19 +8883,19 @@ body, .imagenportada {
   position: relative;
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
-  font-size: 25px;
-  font-family: DeathStar; }
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif; }
   @media screen and (min-width: 576px) {
     .portada_texto {
       font-size: 35px;
       margin-top: 32%; } }
   @media screen and (min-width: 768px) {
     .portada_texto {
-      font-size: 50px;
+      font-size: 45px;
       margin-top: 32%; } }
   @media screen and (min-width: 1024px) {
     .portada_texto {
-      font-size: 70px;
+      font-size: 65px;
       margin-top: 65%; } }
 
 .main_maspedidos {
@@ -9014,8 +9014,7 @@ body, .imagenportada {
     text-decoration: none; }
   .portada_texto {
     position: relative;
-    width: 100%;
-    font-family: DeathStar; }
+    width: 100%; }
   .main_maspedidos {
     width: 100%;
     height: 100%;
@@ -9063,8 +9062,7 @@ body, .imagenportada {
     position: fixed; }
   .portada_texto {
     position: relative;
-    width: 100%;
-    font-family: DeathStar; }
+    width: 100%; }
   .main_maspedidos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

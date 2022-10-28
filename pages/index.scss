@@ -16,20 +16,21 @@ body {
   position: relative;
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
-  font-size: 25px;
+  font-size: 20px;
   @include fsize(sm) {
     font-size: 35px;
     margin-top: 32%;
   }
   @include fsize(md) {
-    font-size: 50px;
+    font-size: 45px;
     margin-top: 32%;
   }
   @include fsize(lg) {
-    font-size: 70px;
+    font-size: 65px;
     margin-top: 65%;
   }
-  font-family: DeathStar;
+  font-family: 'Montserrat', sans-serif;
+
 }
 .main_maspedidos {
   width: 100%;
@@ -169,7 +170,6 @@ body {
   .portada_texto {
     position: relative;
     width: 100%;
-    font-family: DeathStar;
   }
 
   .main_maspedidos {
@@ -231,7 +231,6 @@ body {
   .portada_texto {
     position: relative;
     width: 100%;
-    font-family: DeathStar;
   }
   .main_maspedidos {
     display: grid;
