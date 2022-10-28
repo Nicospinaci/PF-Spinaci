@@ -1,4 +1,8 @@
 /* Font */
+@font-face {
+  font-family: "DeathStar";
+  src: url(/fonts/DeathStar.ttf); }
+
 /* Colores */
 /* Breakpoints */
 /* Bucle Paddings */
@@ -8871,6 +8875,29 @@ body, .imagenportada {
   width: 100%;
   height: 100%; }
 
+.main_title {
+  height: 20%; }
+
+.portada_texto {
+  margin-top: 32%;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  font-size: 25px;
+  font-family: DeathStar; }
+  @media screen and (min-width: 576px) {
+    .portada_texto {
+      font-size: 35px;
+      margin-top: 32%; } }
+  @media screen and (min-width: 768px) {
+    .portada_texto {
+      font-size: 50px;
+      margin-top: 32%; } }
+  @media screen and (min-width: 1024px) {
+    .portada_texto {
+      font-size: 70px;
+      margin-top: 65%; } }
+
 .main_maspedidos {
   width: 100%;
   height: 100%;
@@ -8879,13 +8906,12 @@ body, .imagenportada {
   align-content: center;
   gap: 15px 0px;
   padding: 1rem; }
-  .main_maspedidos_title h1, .main_maspedidos_title .h1 {
-    margin: 0 auto;
-    font-size: 18px;
-    padding-top: 20px;
-    align-items: center;
+  .main_maspedidos_title {
+    display: grid;
     justify-content: center;
-    text-align: center; }
+    margin: 0 auto;
+    font-size: 16px;
+    padding-top: 20px; }
   .main_maspedidos_cam {
     width: 80%; }
   .main_maspedidos_box {
@@ -8901,13 +8927,13 @@ body, .imagenportada {
       font-size: 13px; }
       @media screen and (min-width: 576px) {
         .main_maspedidos_box ul {
-          font-size: 14px; } }
+          font-size: 16px; } }
       @media screen and (min-width: 768px) {
         .main_maspedidos_box ul {
-          font-size: 16px; } }
+          font-size: 18px; } }
       @media screen and (min-width: 1024px) {
         .main_maspedidos_box ul {
-          font-size: 16px; } }
+          font-size: 11px; } }
 
 .masproductos {
   display: flex;
@@ -8936,25 +8962,13 @@ body, .imagenportada {
 
 .nuevos_arribos {
   display: grid;
-  grid-template-rows: 1fr 0,5fr;
+  grid-template-rows: 1fr 0, 5fr;
   width: 100%;
   height: 100%;
   align-items: center;
   justify-items: center;
   background: #403231;
   background: linear-gradient(0deg, #403231 16%, #7e4b4d 54%); }
-
-.card-title {
-  font-size: 30px; }
-  @media screen and (min-width: 576px) {
-    .card-title {
-      font-size: 34px; } }
-  @media screen and (min-width: 768px) {
-    .card-title {
-      font-size: 38px; } }
-  @media screen and (min-width: 1024px) {
-    .card-title {
-      font-size: 50px; } }
 
 .card-title-promo {
   font-size: 16px; }
@@ -8998,22 +9012,39 @@ body, .imagenportada {
     justify-content: center;
     align-items: center;
     text-decoration: none; }
+  .portada_texto {
+    position: relative;
+    width: 100%;
+    font-family: DeathStar; }
   .main_maspedidos {
-    gap: 15px; }
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 15px 0px;
+    padding: 1rem; }
     .main_maspedidos_title {
+      display: grid;
+      justify-content: center;
+      margin: 0 auto;
+      font-size: 18px;
+      padding-top: 20px;
       display: flex;
-      flex-direction: column;
-      font-size: 8px;
       align-items: center;
       justify-content: center;
-      padding-bottom: 20px;
-      padding: 1rem; }
-      .main_maspedidos_title h2, .main_maspedidos_title .h2 {
-        padding-top: 20px;
-        font-size: 26px; }
+      text-align: center; }
+    .main_maspedidos_cam {
+      width: 80%; }
     .main_maspedidos_box {
-      width: 75%;
-      justify-self: center; }
+      background-color: white;
+      border-radius: 6px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      align-items: center;
+      padding: 1rem;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.21); }
   .masproductos {
     display: flex;
     flex-direction: row;
@@ -9030,14 +9061,15 @@ body, .imagenportada {
     z-index: 3;
     width: 100%;
     position: fixed; }
-  .main_img {
-    width: 100%; }
+  .portada_texto {
+    position: relative;
+    width: 100%;
+    font-family: DeathStar; }
   .main_maspedidos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-content: space-evenly;
-    gap: 1rem;
-    padding: 1rem; }
+    gap: 1rem; }
     .main_maspedidos_title {
       display: grid;
       justify-content: center;
@@ -9082,7 +9114,7 @@ body, .imagenportada {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     grid-area: nuevos_arribos;
     display: grid;
-    grid-template-rows: 1fr 0,5fr;
+    grid-template-rows: 1fr 0, 5fr;
     height: 100%;
     justify-items: center;
     align-items: center;

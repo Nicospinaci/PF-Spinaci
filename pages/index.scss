@@ -8,6 +8,29 @@ body {
 .imagenportada {
   @extend body;
 }
+.main_title {
+  height: 20%;
+}
+.portada_texto {
+  margin-top: 32%;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  font-size: 25px;
+  @include fsize(sm) {
+    font-size: 35px;
+    margin-top: 32%;
+  }
+  @include fsize(md) {
+    font-size: 50px;
+    margin-top: 32%;
+  }
+  @include fsize(lg) {
+    font-size: 70px;
+    margin-top: 65%;
+  }
+  font-family: DeathStar;
+}
 .main_maspedidos {
   width: 100%;
   height: 100%;
@@ -16,14 +39,12 @@ body {
   align-content: center;
   gap: 15px 0px;
   padding: 1rem;
-
-  &_title h1 {
-    margin: 0 auto;
-    font-size: 18px;
-    padding-top: 20px;
-    align-items: center;
+  &_title{
+    display: grid;
     justify-content: center;
-    text-align: center;
+    margin: 0 auto;
+    font-size: 16px;
+    padding-top: 20px;
   }
   &_cam {
     width: 80%;
@@ -32,13 +53,13 @@ body {
     ul {
       font-size: 13px;
       @include fsize(sm) {
-        font-size: 14px;
+        font-size: 16px;
       }
       @include fsize(md) {
-        font-size: 16px;
+        font-size: 18px;
       }
       @include fsize(lg) {
-        font-size: 16px;
+        font-size: 11px;
       }
     }
     background-color: white;
@@ -51,6 +72,7 @@ body {
     @include box-shadow(1);
   }
 }
+
 .masproductos {
   display: flex;
   flex-direction: row;
@@ -68,7 +90,6 @@ body {
   grid-template-rows: 1fr 1fr;
   justify-items: center;
   align-items: center;
-
 }
 .oferta_del_mes {
   width: 100%;
@@ -83,7 +104,7 @@ body {
 }
 .nuevos_arribos {
   display: grid;
-  grid-template-rows: 1fr 0,5fr;
+  grid-template-rows: 1fr 0, 5fr;
   width: 100%;
   height: 100%;
   align-items: center;
@@ -95,18 +116,7 @@ body {
     rgba(126, 75, 77, 1) 54%
   );
 }
-.card-title {
-  font-size: 30px;
-  @include fsize(sm) {
-    font-size: 34px;
-  }
-  @include fsize(md) {
-    font-size: 38px;
-  }
-  @include fsize(lg) {
-    font-size: 50px;
-  }
-}
+
 .card-title-promo {
   font-size: 16px;
   @include fsize(sm) {
@@ -118,7 +128,6 @@ body {
   @include fsize(lg) {
     font-size: 50px;
   }
-
 }
 .ver_mas {
   font-size: 16px;
@@ -131,11 +140,9 @@ body {
   @include fsize(lg) {
     font-size: 34px;
   }
-
 }
 .promo_estudiantes {
   width: 100%;
-  
 }
 
 /* Media Query Tablet */
@@ -157,25 +164,46 @@ body {
       text-decoration: none;
     }
   }
+  .main_title {
+  }
+  .portada_texto {
+    position: relative;
+    width: 100%;
+    font-family: DeathStar;
+  }
 
   .main_maspedidos {
-    gap: 15px;
-    &_title {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 15px 0px;
+    padding: 1rem;
+
+    &_title{
+      display: grid;
+      justify-content: center;
+      margin: 0 auto;
+      font-size: 18px;
+      padding-top: 20px;
       display: flex;
-      flex-direction: column;
-      font-size: 8px;
       align-items: center;
       justify-content: center;
-      padding-bottom: 20px;
-      padding: 1rem;
-      h2 {
-        padding-top: 20px;
-        font-size: 26px;
-      }
+      text-align: center;
+    }
+    &_cam {
+      width: 80%;
     }
     &_box {
-      width: 75%;
-      justify-self: center;
+      background-color: white;
+      border-radius: 6px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      align-items: center;
+      padding: 1rem;
+      @include box-shadow(1);
     }
   }
 
@@ -189,8 +217,6 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-
-
 }
 /* Media Query Desktop */
 @media (min-width: 1024px) {
@@ -199,15 +225,19 @@ body {
     width: 100%;
     position: fixed;
   }
-  .main_img {
+
+  .main_title {
+  }
+  .portada_texto {
+    position: relative;
     width: 100%;
+    font-family: DeathStar;
   }
   .main_maspedidos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-content: space-evenly;
     gap: 1rem;
-    padding: 1rem;
     &_title {
       display: grid;
       justify-content: center;
@@ -254,7 +284,7 @@ body {
     justify-items: center;
     gap: 20px 10px;
   }
-  .card-img { 
+  .card-img {
     display: grid;
     grid-template-rows: 1fr 1fr;
     justify-items: center;
@@ -264,7 +294,7 @@ body {
     @include box-shadow(2);
     grid-area: nuevos_arribos;
     display: grid;
-    grid-template-rows: 1fr 0,5fr;
+    grid-template-rows: 1fr 0, 5fr;
     height: 100%;
     justify-items: center;
     align-items: center;
@@ -318,7 +348,6 @@ body {
     }
   }
   .promo_estudiantes {
-
     @include box-shadow(2);
     grid-area: promo_estudiantes;
     animation-name: Movimiento3;

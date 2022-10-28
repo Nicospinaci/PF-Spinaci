@@ -1,6 +1,11 @@
 /* Font */
 
 $font-family: "DM Sans", sans-serif;
+  @font-face {
+    font-family: "DeathStar";
+    src: url(/fonts/DeathStar.ttf);
+  }
+
 
 /* Colores */
 
